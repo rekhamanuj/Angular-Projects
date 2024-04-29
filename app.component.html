@@ -1,0 +1,38 @@
+<h1 align="center">Students Marksheet</h1>
+<p align="center">*********************************************</p>
+<br>
+<br>
+
+<h3 align="center">Name : <input type="text"  #name1 name="name1" style="width:10%; height:30px"></h3>
+
+<br>
+<br>
+<h3 align="center">Roll : <input type="text" #roll1 name="roll1" style="width:10%; height:30px"></h3>
+<br>
+<br>
+<h3 align="center">Physics : 
+<input type = "number" style="width:10%; height:30px" #num1 name="num1" [value]="num1" placeholder="Enter num1"></h3>
+<br>
+<h3 align="center">Chemistry
+<input type = "number" style="width:10%; height:30px" #num2 name="num2" [value]="num2" placeholder="Enter num2"></h3>
+<br>
+<h3 align="center">Maths
+<input type = "number" style="width:10%; height:30px" #num3 name="num3" [value]="num3" placeholder="Enter num3"></h3>
+<br>
+<br><br>
+
+<button style="width:10%; height:30px" (click)="getSum(num1.value, num2.value, num3.value)">Add</button>
+
+<button style="width:10%; height:30px;" (click)="getAvg(num1.value, num2.value, num3.value)">Average</button>
+<button (click)="getTextBoxVal(name1)" style="width: 10%; height:30px;">Get Value</button>
+<button (click)="getdet(name1.value, roll1.value, num1.value, num2.value, num3. value)" style="width: 10%; height:30px;">Details</button>
+<br><br>
+<div class="box">
+<h4>Name of the Student: {{result}}
+<br>Roll No of the Student: {{result1}}
+<br>Physics: {{result2}}
+<br>Chemistry: {{result3}}
+<br>Maths: {{result4}}</h4>
+</div>
+<h3 style="border-style:solid; height:30px; width:200px; background-color:rgb(238, 227, 10)">Sum : {{sum}}</h3>
+<h3 style="border-style:solid; height:30px; width:200px; background-color:rgb(238, 227, 10);">Average : {{res}}</h3>
